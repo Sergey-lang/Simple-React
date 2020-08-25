@@ -1,0 +1,10 @@
+.list_container {
+    display: flex;
+    flex-direction: column;
+    background: #5b5b5b;
+    height: auto;
+    width: 500px;
+    justify-content: center;
+    padding: 10px;
+}
+

@@ -1,0 +1,83 @@
+.list_block {
+    display: flex;
+    background: #fcfcfc;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    color: white;
+    padding-bottom: 1px;
+}
+
+.list_item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    background: #9f9f9f;
+    height: 45px;
+    flex-direction: row;
+}
+
+.list_item p {
+    margin-left: 5%;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 65%;
+    transition: all 200ms;
+}
+
+.list_item p:hover {
+    font-weight: 800;
+    font-size: 18px;
+    color: dimgray;
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+.importance_block {
+    display: flex;
+    background: #ee4a58;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.remove_button {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 15%;
+    align-items: center;
+    border: none;
+}
+
+.remove_button:hover {
+    cursor: pointer;
+    background: #de0b0b;
+}
+
+.filter {
+    display: flex;
+    width: 100%;
+}
+
+.filter_button {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms;
+}
+
+.filter_button:hover {
+    cursor: pointer;
+    background: #0bde0f;
+    font-size: 16px;
+    transition: all 200ms;
+    font-weight: 600;
+}
+
