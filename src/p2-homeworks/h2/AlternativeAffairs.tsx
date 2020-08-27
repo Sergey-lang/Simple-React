@@ -5,7 +5,7 @@ import Todo from './Todo';
 export type ListType = {
     id: number
     task: string
-    importance: string
+    importance: FilterType
 }
 
 export type FilterType = 'all' | 'low' | 'medium' | 'high'
