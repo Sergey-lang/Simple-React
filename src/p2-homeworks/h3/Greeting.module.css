@@ -1,65 +1,87 @@
 .wrapper {
     display: flex;
     justify-content: center;
-    background: #07679b;
-    padding: 15px;
+    flex-direction: row;
 }
 
-.group {
+.users_block {
+    display: flex;
+    flex-direction: column;
+    color: #d4a60d;
+    background: rgb(47, 46, 46);
+    margin-left: 15px;
+    width: auto;
+    padding: 20px;
+    height: auto;
+}
+
+.users_block p {
+    margin: 0;
+    border-bottom: 1px solid white;
+}
+.input_wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.modern {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 8px 15px;
-    background: #B8ED01;
-    justify-content: center;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    transition: all 0.3s ease-out;
-    box-shadow:
-            inset 0 1px 0 rgba(255,255,255,0.5),
-            0 2px 2px rgba(0,0,0,0.3),
-            0 0 4px 1px rgba(0,0,0,0.2);
-    text-decoration: none;
-    text-shadow: 0 1px rgba(255,255,255,0.7);
+    background: rgb(210, 210, 210);
+    min-width: 300px;
+    width: auto;
+    max-height: 270px;
+    padding: 20px;
 }
 
-.modern:hover {
-    background: #C7FE0A
+.input_wrapper h3 {
+    text-align: center;
+    color: #1f1f1f;
+    font-size: 25px;
 }
 
-.someClass {
-    display: block;
-    padding: 5px;
-    border: 4px solid #F1B720;
-    border-radius: 5px;
-    color: #333;
-    transition: all 0.3s ease-out;
+.correctInput {
+    margin: 10px 0;
+    background: #ffffff;
+    border: none;
+    padding: 15px;
+    border: 0;
+    border-bottom: 2px solid #2b2b2b;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    font-size: 18px;
+    color: #2b2b2b;
 }
 
-.someClass:hover {
-    border-radius: 8px
+.correctInput:focus {
+    outline:none;
 }
 
-.someClass:focus {
-    outline: none;
-    border-radius: 8px;
-    border-color: #EBD292;
+.correctInput.error {
+    background: #d4a60d;
+}
+
+.error_1 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #de0b0b;
+}
+
+.add_user_btn {
+    border: none;
+    height: 30px;
+    color: #353535;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+.add_user_btn:hover {
+    color: #d4a60d;
+    background: #353535;
+    cursor: pointer;
 }
 
 .userCount {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    color: white;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
+    color: #353535;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
-.errorBlock {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    color: white;
-}

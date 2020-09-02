@@ -20,10 +20,11 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> =
 
 
         const addUser = () => {
-            if (name !== '') {
+            const trimName = name.trim()
+            if (trimName) {
                 addUserCallback(name)
                 alert('Hello ' + name)
-                
+                setName('')
             } else {
                 let err = 'Name is not defined'
                 setError(err)
@@ -35,6 +36,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> =
 
         return (
             <Greeting
+                users={users}
                 name={name}
                 setNameCallback={setNameCallback}
                 addUser={addUser}

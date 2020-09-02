@@ -1,11 +1,14 @@
 import React from "react";
+import {UserType} from './HW3';
 
-function AlternativeGreeting() {
-    return (
-        <div>
-
-        </div>
-    );
+type AlternativeGreetingPropsType = {
+    users: Array<UserType>
 }
+const  AlternativeGreeting: React.FC<AlternativeGreetingPropsType> = ({users}) => {
+    return (
+        <div></div>
+    )
+}
+
 
 export default AlternativeGreeting;
