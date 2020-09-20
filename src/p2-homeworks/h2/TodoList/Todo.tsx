@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Todo.module.css'
-import {FilterType, ListType} from './AlternativeAffairs';
+import {FilterType, ListType} from './../HW2';
 
 type PropsType = {
     task: Array<ListType>

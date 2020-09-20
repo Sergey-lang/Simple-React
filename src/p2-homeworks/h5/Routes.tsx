@@ -1,27 +1,26 @@
-import React from "react";
+import React from 'react';
+import {Redirect, Route, Switch} from 'react-router-dom';
+import PreJunior from './pages/PreJunior';
+import Error404 from './pages/Error404';
 
 export const PATH = {
-    PRE_JUNIOR: "/pre-junior",
-    // add paths
+    PRE_JUNIOR: '/pre-junior',
+    HOME: '/',
+    PRE_JUNIORPlUS: '/pre-junior-plus',
 }
 
 function Routes() {
     return (
         <div>
             {/*Switch выбирает первый подходящий роут*/}
-            {/*<Switch>*/}
-
-            {/*в начале мы попадаем на страницу "/" и переходим сразу на страницу PRE_JUNIOR*/}
-            {/*exact нужен чтоб указать полное совподение (что после "/" ничего не будет)*/}
-            {/*<Route path={"/"} exact render={() => <Redirect to={PRE_JUNIOR}/>}/>*/}
-
-            {/*<Route path={PRE_JUNIOR} render={() => <PreJunior/>}/>*/}
-                // add routes
-
-            {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
-            {/*<Route render={() => <Error404/>}/>*/}
-
-            {/*</Switch>*/}
+            <Switch>
+                {/*в начале мы попадаем на страницу "/" и переходим сразу на страницу PRE_JUNIOR*/}
+                {/*exact нужен чтоб указать полное совпадение (что после "/" ничего не будет)*/}
+                <Route exact path="/"  render={() => <Redirect to='/pre-junior'/>}/>
+                <Route path="/pre-junior" render={() => <PreJunior/>}/>
+                <Route path="/pre-junior-plus" render={() => <PreJunior/>}/>
+                <Route render={() => <Error404/>}/>
+            </Switch>
         </div>
     );
 }

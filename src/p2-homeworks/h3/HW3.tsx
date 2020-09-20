@@ -21,13 +21,15 @@ function HW3() {
     }
 
     return (
-        <div className={s.home_3}>
-            <hr/>
-            {/*should work (должно работать)*/}
-            <GreetingContainer users={users}
-                               addUserCallback={addUserCallback}
-            />
-        </div>
+        <>
+            <h1>Homework 3</h1>
+            <div className={s.home_3}>
+                {/*should work (должно работать)*/}
+                <GreetingContainer users={users}
+                                   addUserCallback={addUserCallback}
+                />
+            </div>
+        </>
     );
 }
 

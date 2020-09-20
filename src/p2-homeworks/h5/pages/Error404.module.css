@@ -1,0 +1,18 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.numberError {
+    font-size: 150px;
+    font-weight: 600;
+    color: #e91010;
+}
+
+.messageError{
+    display: flex;
+    font-size: 35px;
+    text-shadow: 1px 3px 3px #a5a4a4;
+    color: #000000;
+}

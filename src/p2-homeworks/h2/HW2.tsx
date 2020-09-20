@@ -1,53 +1,59 @@
-import React, {useState} from "react";
-import Affairs from "./Affairs";
-import AlternativeAffairs from './AlternativeAffairs';
+import React, {useState} from 'react';
+import s from './Hw2.module.css';
+import Todo from './TodoList/Todo';
 
-// types
-export type AffairPriorityType = any; // need to fix any
-export type AffairType = any; // need to fix any
-export type FilterType = "all" | AffairPriorityType;
-
-// constants
-const defaultAffairs: any = [ // need to fix any
-    {_id: 1, name: "React", priority: "high"},
-    {_id: 2, name: "anime", priority: "low"},
-    {_id: 3, name: "games", priority: "low"},
-    {_id: 4, name: "work", priority: "high"},
-    {_id: 5, name: "html & css", priority: "middle"},
-];
-
-// pure helper functions
-export const filterAffairs = (affairs: any, filter: any): any => { // need to fix any
-    if (filter === "all") return affairs;
-    else return; // need to fix
+export type ListType = {
+    id: number
+    task: string
+    importance: FilterType
 }
-export const deleteAffair = (affairs: any, _id: any): any => { // need to fix any
-    return; // need to fix
-}
+
+export type FilterType = 'all' | 'low' | 'medium' | 'high'
 
 function HW2() {
-    const [affairs, setAffairs] = useState<any>(defaultAffairs); // need to fix any
-    const [filter, setFilter] = useState<FilterType>("all");
+    const [task, setTask] = useState<Array<ListType>>(
+        [
+            {id: 1, task: 'Wash the dishes', importance: 'low'},
+            {id: 2, task: 'Go shopping', importance: 'medium'},
+            {id: 3, task: 'Solve task from CodeWars', importance: 'low'},
+            {id: 4, task: 'Watch the movies about React', importance: 'medium'},
+            {id: 5, task: 'Be quite', importance: 'high'},
+        ]
+    )
 
-    const filteredAffairs = filterAffairs(affairs, filter);
-    const deleteAffairCallback = (_id: any) => setAffairs(deleteAffair(affairs, _id)); // need to fix any
+    function removeTask(id: number) {
+        setTask(task.filter(t => t.id !== id))
+    }
+
+    const [filter, setFilter] = useState<FilterType>('all')
+
+    let arrayAfterFilter = task
+    if (filter === 'low') {
+        arrayAfterFilter = task.filter(t => t.importance === 'low')
+    } else if (filter === 'medium') {
+        arrayAfterFilter = task.filter(t => t.importance === 'medium')
+    } else if (filter === 'high') {
+        arrayAfterFilter = task.filter(t => t.importance === 'high')
+    } else if (filter === 'all') {
+        arrayAfterFilter = task
+    }
+
+    function changeImportance(value: FilterType) {
+        setFilter(value)
+    }
 
     return (
-        <div>
-            <hr/>
-            homeworks 2
-
-            {/*should work (должно работать)*/}
-            <Affairs
-                data={filteredAffairs}
-                setFilter={setFilter}
-                deleteAffairCallback={deleteAffairCallback}
-            />
-
-            <hr/>
-            <AlternativeAffairs />
-            <hr/>
-        </div>
+        <>
+            <h1>Homework 2</h1>
+            <div className={s.wrapper}>
+                <div className={s.list_container}>
+                    <Todo task={arrayAfterFilter}
+                          removeTask={removeTask}
+                          changeTask={changeImportance}
+                    />
+                </div>
+            </div>
+        </>
     );
 }
 
