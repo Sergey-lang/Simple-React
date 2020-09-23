@@ -10,10 +10,7 @@ function Header() {
                     <NavLink to='/pre-junior' activeClassName={s.activeLink}>PreJunior</NavLink>
                 </div>
                 <div className={s.link}>
-                    <NavLink to='/pre-junior-plus' activeClassName={s.activeLink}>PreJunior</NavLink>
-                </div>
-                <div className={s.link}>
-                    <NavLink to='/pre-junior-minus' activeClassName={s.activeLink}>PreJunior</NavLink>
+                    <NavLink to='/pre-junior-plus' activeClassName={s.activeLink}>PreJunior+</NavLink>
                 </div>
             </div>
         </div>
@@ -21,3 +18,5 @@ function Header() {
 }
 
 export default Header;
+
+

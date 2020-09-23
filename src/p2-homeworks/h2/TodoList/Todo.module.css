@@ -55,7 +55,7 @@
 
 .remove_button:hover {
     cursor: pointer;
-    background: #de0b0b;
+    background: rgba(255, 69, 69, 0.8);
 }
 
 .filter {
@@ -75,7 +75,7 @@
 
 .filter_button:hover {
     cursor: pointer;
-    background: #0bde0f;
+    background: rgba(115, 229, 53, 0.8);
     font-size: 16px;
     transition: all 200ms;
     font-weight: 600;

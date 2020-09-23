@@ -1,28 +1,25 @@
-import React from "react";
+import React from 'react';
+import {Header} from '../NewComponents/Header';
+import Message from './Message';
+import avatarImg from './4516396841595453816-128.png'
 
 const messageData = {
-    avatar: "https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg",
-    name: "Some Name",
-    message: "some text",
-    time: "22:00",
+    avatar: avatarImg,
+    name: 'Sergey',
+    message: 'Great job!',
+    time: '03:00',
 };
 
 function HW1() {
     return (
         <div>
-            <h1>Homework 1</h1>
-
-            {/*should work (должно работать)*/}
-
-            {/*<Message*/}
-            {/*    avatar={messageData.avatar}*/}
-            {/*    name={messageData.name}*/}
-            {/*    message={messageData.message}*/}
-            {/*    time={messageData.time}*/}
-            {/*/>*/}
-
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeMessage/>*/}
+            <Header title={'homework 1'}/>
+            <Message
+                avatar={messageData.avatar}
+                name={messageData.name}
+                message={messageData.message}
+                time={messageData.time}
+            />
         </div>
     );
 }

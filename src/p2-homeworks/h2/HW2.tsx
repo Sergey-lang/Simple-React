@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import s from './Hw2.module.css';
 import Todo from './TodoList/Todo';
+import {Header} from '../NewComponents/Header';
 
 export type ListType = {
     id: number
@@ -44,7 +45,7 @@ function HW2() {
 
     return (
         <>
-            <h1>Homework 2</h1>
+            <Header title={'homework 2'}/>
             <div className={s.wrapper}>
                 <div className={s.list_container}>
                     <Todo task={arrayAfterFilter}

@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Todo.module.css'
 import {FilterType, ListType} from './../HW2';
+import SuperButton from '../../h4/common/c2-SuperButton/SuperButton';
 
 type PropsType = {
     task: Array<ListType>
@@ -17,31 +18,32 @@ function Todo(props: PropsType) {
                         <div className={s.list_item}>
                             <p>{t.task}</p>
                             <div className={t.importance}>{}</div>
-                            <button onClick={() => {
+
+                            <SuperButton onClick={() => {
                                 props.removeTask(t.id)
                             }} className={s.remove_button}>X
-                            </button>
+                            </SuperButton>
                         </div>
                     </div>
                 )
             })}
             <div className={s.filter}>
-                <button className={s.filter_button} onClick={() => {
+                <SuperButton className={s.filter_button} onClick={() => {
                     props.changeTask('all')
                 }}>All
-                </button>
-                <button className={s.filter_button} onClick={() => {
+                </SuperButton>
+                <SuperButton className={s.filter_button} onClick={() => {
                     props.changeTask('high')
                 }}>High
-                </button>
-                <button className={s.filter_button} onClick={() => {
+                </SuperButton>
+                <SuperButton className={s.filter_button} onClick={() => {
                     props.changeTask('medium')
                 }}>Medium
-                </button>
-                <button className={s.filter_button} onClick={() => {
+                </SuperButton>
+                <SuperButton className={s.filter_button} onClick={() => {
                     props.changeTask('low')
                 }}>Low
-                </button>
+                </SuperButton>
             </div>
         </div>
     );

@@ -1,25 +1,14 @@
 .superInput {
     border: none;
-    background: #e0dddd;
-    padding: 3px;
     outline: none;
-    box-shadow: 0px 7px 5px -3px rgba(0,0,0,0.36);
-}
-
-.superInput:focus {
-    border: none;
 }
 
 .errorInput {
     border: none;
-    background: #ffa0a0;
-    padding: 3px;
     outline: none;
-    box-shadow: 0px 7px 5px -3px rgba(0,0,0,0.36);
 }
 
 .error {
     color: #c83a3a;
-    margin: 5px;
 }
 

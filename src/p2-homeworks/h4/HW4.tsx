@@ -3,6 +3,7 @@ import SuperInputText from './common/c1-SuperInputText/SuperInputText';
 import s from './HW4.module.css';
 import SuperButton from './common/c2-SuperButton/SuperButton';
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox';
+import {Header} from '../NewComponents/Header';
 
 function HW4() {
 
@@ -23,7 +24,7 @@ function HW4() {
 
     return (
         <div>
-            <h1>Homework 4</h1>
+            <Header title={'homework 4'}/>
             <div className={s.column}>
                 {/*should work (должно работать)*/}
                 <SuperInputText value={text}
