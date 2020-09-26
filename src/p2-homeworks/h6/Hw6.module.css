@@ -1,0 +1,20 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.btn {
+    composes: btn from './../../index.css';
+    margin-bottom: 2px;
+}
+
+.btn:hover {
+    font-weight:450;
+    font-size: 13.3px;
+    background: #e2e0e0;
+}
+
+

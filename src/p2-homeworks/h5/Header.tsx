@@ -10,7 +10,10 @@ function Header() {
                     <NavLink to='/pre-junior' activeClassName={s.activeLink}>PreJunior</NavLink>
                 </div>
                 <div className={s.link}>
-                    <NavLink to='/pre-junior-plus' activeClassName={s.activeLink}>PreJunior+</NavLink>
+                    <NavLink to='/junior' activeClassName={s.activeLink}>Junior</NavLink>
+                </div>
+                <div className={s.link}>
+                    <NavLink to='/junior-plus' activeClassName={s.activeLink}>Junior+</NavLink>
                 </div>
             </div>
         </div>
