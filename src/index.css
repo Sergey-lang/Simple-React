@@ -30,7 +30,7 @@ code {
     background: rgba(115, 229, 53, .8);
 }
 
-.input {
+.span {
     font-size: 18px;
     display: flex;
     overflow: hidden;
