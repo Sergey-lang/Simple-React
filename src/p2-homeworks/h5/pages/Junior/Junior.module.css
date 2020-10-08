@@ -1,7 +1,15 @@
-.prejunplus_wrapper {
+.junior_wrapper
+{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    height:700px;
+    height: 700px;
+    box-sizing: border-box;
+}
+
+.home_block {
+    border: 5px dashed black;
+    padding: 15px;
+    margin: 15px;
+    height: max-content;
 }

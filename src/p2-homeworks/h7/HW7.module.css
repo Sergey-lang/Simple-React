@@ -1,0 +1,22 @@
+.hw_7 {
+    display: flex;
+    width: 200px;
+    height: 150px;
+    flex-direction: column;
+}
+
+.select {
+    height: 50px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background: #3f92d2;
+    color: #f3eded;
+    padding: 10px;
+    box-shadow: 0 4px 4px -2px rgba(0,0,0,.58);
+    margin-bottom: 5px;
+}
+
+.radio_button {
+    flex-direction: row;
+}

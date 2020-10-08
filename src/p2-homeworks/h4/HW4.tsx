@@ -3,7 +3,6 @@ import SuperInputText from './common/c1-SuperInputText/SuperInputText';
 import s from './HW4.module.css';
 import SuperButton from './common/c2-SuperButton/SuperButton';
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox';
-import {Header} from '../NewComponents/Header';
 
 function HW4() {
 
@@ -24,7 +23,6 @@ function HW4() {
 
     return (
         <div>
-            <Header title={'homework 4'}/>
             <div className={s.column}>
                 {/*should work (должно работать)*/}
                 <SuperInputText value={text}
@@ -37,13 +35,13 @@ function HW4() {
                 {/*should work (должно работать)*/}
                 <SuperButton red // пропсу с булевым значением не обязательно указывать true
                              onClick={showAlert}>
-                             delete {/*// название кнопки попадёт в children*/}
+                    delete {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
                 {/*should work (должно работать)*/}
                 <SuperCheckbox checked={checked}
                                onChangeChecked={setChecked}>
-                               some text {/*// этот текст попадёт в children*/}
+                    some text {/*// этот текст попадёт в children*/}
                 </SuperCheckbox>
                 {/*// onChange тоже должен работать*/}
                 <SuperCheckbox checked={checked}

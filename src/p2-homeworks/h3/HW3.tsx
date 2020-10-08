@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import GreetingContainer from './GreetingContainer';
 import s from './HW3.module.css';
 import {v1} from 'uuid';
-import AlternativeGreeting from './AlternativeGreeting';
-import {Header} from '../NewComponents/Header';
 
 // types
 export type UserType = {
@@ -22,15 +20,11 @@ function HW3() {
     }
 
     return (
-        <>
-            <Header title={'homework 3'}/>
-            <div className={s.home_3}>
-                {/*should work (должно работать)*/}
-                <GreetingContainer users={users}
-                                   addUserCallback={addUserCallback}
-                />
-            </div>
-        </>
+        <div className={s.home_3}>
+            {/*should work (должно работать)*/}
+            <GreetingContainer users={users} addUserCallback={addUserCallback}
+            />
+        </div>
     );
 }
 

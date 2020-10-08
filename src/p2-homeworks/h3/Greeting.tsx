@@ -23,14 +23,14 @@ const Greeting: React.FC<GreetingPropsType> = (
     return (
         <div className={s.wrapper}>
             <div className={s.input_wrapper}>
-                <h3 className={s.form_name}>USERS FORM</h3>
+                <div className={s.form_name}>USERS FORM</div>
                 <SuperInputText value={name}
                                 onChange={setNameCallback}
                                 className={inputClass}
                                 placeholder='Enter name'/>
                 <span className={s.error_1}>{error}</span>
                 <SuperButton onClick={addUser}
-                             className={s.add_user_btn}>Add user</SuperButton>
+                             className={s.add_user_btn}>ADD</SuperButton>
                 <span className={s.userCount}>Users count: {totalUsers}</span>
             </div>
             <div className={s.users_block}>

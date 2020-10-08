@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan';
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
 import {restoreState, saveState} from './localStorage/localStorage';
-import {Header} from '../NewComponents/Header';
 import s from './Hw6.module.css'
 
 function HW6() {
@@ -18,7 +17,6 @@ function HW6() {
 
     return (
         <div className={s.wrapper}>
-            <Header title={'HOMEWORK 6'}/>
             {/*should work (должно работать)*/}
             <div>
                 <SuperEditableSpan

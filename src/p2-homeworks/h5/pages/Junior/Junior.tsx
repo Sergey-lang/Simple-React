@@ -1,15 +1,22 @@
-import React from "react";
+import React from 'react';
 import s from './Junior.module.css'
-import HW1 from "../../../h1/HW1";
-import HW2 from "../../../h2/HW2";
-import HW3 from "../../../h3/HW3";
-import HW4 from "../../../h4/HW4";
+import HW8 from '../../../h8/HW8';
 import HW7 from '../../../h7/HW7';
+import {Header} from '../../../NewComponents/Header';
+
 
 function Junior() {
     return (
-        <div className={s.prejunplus_wrapper}>
-            <HW7/>
+        <div className={s.junior_wrapper}>
+            <div className={s.home_block}>
+                <Header title={'homework 7'}/>
+                <HW7/>
+            </div>
+            <div className={s.home_block}>
+                <Header title={'homework 8'}/>
+                <HW8/>
+            </div>
+
         </div>
     );
 }

@@ -12,6 +12,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
         type, name,
         options, value,
         onChange, onChangeOption,
+        className,
         ...restProps
     }
 ) => {
@@ -34,9 +35,9 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
     )) : [];
 
     return (
-        <>
+        <div>
             {mappedOptions}
-        </>
+        </div>
     );
 }
 
