@@ -47,9 +47,7 @@ function Clock() {
 
     return (
         <div className={s.main_block}>
-            {/*<div>*/}
-            {/*    {stringTime}*/}
-            {/*</div>*/}
+
             <div className={s.clock}
                  onMouseEnter={onMouseEnter}
                  onMouseLeave={onMouseLeave}
