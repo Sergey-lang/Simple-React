@@ -52,7 +52,6 @@
 .hr,
 .mn,
 .sc {
-    /*align-items: center;*/
     position: absolute;
 
     display: flex;
@@ -71,7 +70,7 @@
     content: '';
 
     border-radius: 6px 6px 0 0;
-    background: #ff105a;
+    background: #ca0707;
 }
 
 .mn:before {
