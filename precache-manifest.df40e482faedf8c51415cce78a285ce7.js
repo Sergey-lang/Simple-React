@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5392e6225daa7f94ff81028ad72356bd",
+    "revision": "48b92ab5553311c980305c14f3eadd43",
     "url": "/Simple-React-HW/index.html"
   },
   {
-    "revision": "7cda585b6f254a2a3b5d",
-    "url": "/Simple-React-HW/static/css/main.56420746.chunk.css"
+    "revision": "ec7fb2948ecb2e9a1294",
+    "url": "/Simple-React-HW/static/css/main.f8790fa8.chunk.css"
   },
   {
-    "revision": "1ef99b3f4114c2b63a06",
-    "url": "/Simple-React-HW/static/js/2.6a07b374.chunk.js"
+    "revision": "3477396b76a8ed145fd7",
+    "url": "/Simple-React-HW/static/js/2.5025e3bb.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/Simple-React-HW/static/js/2.6a07b374.chunk.js.LICENSE.txt"
+    "url": "/Simple-React-HW/static/js/2.5025e3bb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7cda585b6f254a2a3b5d",
-    "url": "/Simple-React-HW/static/js/main.e95d987c.chunk.js"
+    "revision": "ec7fb2948ecb2e9a1294",
+    "url": "/Simple-React-HW/static/js/main.2411e2b6.chunk.js"
   },
   {
     "revision": "6f8bdabcf283a54fb81b",
