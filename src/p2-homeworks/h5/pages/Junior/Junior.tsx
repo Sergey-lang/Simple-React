@@ -6,6 +6,7 @@ import {Header} from '../../../NewComponents/Header';
 import {HW9} from '../../../h9/HW9';
 import {HW10} from '../../../h10/HW10';
 import {HW11} from '../../../h11/HW11';
+import {HW12} from '../../../h12/HW12';
 
 export function Junior() {
     return (
@@ -29,6 +30,10 @@ export function Junior() {
             <div className={s.home_block}>
                 <Header title={'homework 11'}/>
                 <HW11/>
+            </div>
+            <div className={s.home_block}>
+                <Header title={'homework 12'}/>
+                <HW12/>
             </div>
         </div>
     );

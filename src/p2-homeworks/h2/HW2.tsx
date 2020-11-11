@@ -43,7 +43,7 @@ function HW2() {
     }
 
     return (
-        <div className={s.list_container}>
+        <div className={s.filterWrapper}>
             <Todo task={arrayAfterFilter}
                   removeTask={removeTask}
                   changeTask={changeImportance}

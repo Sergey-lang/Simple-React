@@ -21,3 +21,30 @@
 .some-text {
     color: darkslateblue;
 }
+
+.purple {
+    background: #7908AA;
+}
+
+.purple-text {
+    color: #F3FD00;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.themeSelector {
+    width: 200px;
+    position: absolute;
+    top: -100px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+.text {
+    letter-spacing: 0.02em;
+    line-height: 26px;
+}

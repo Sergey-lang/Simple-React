@@ -1,8 +1,9 @@
 .message_style {
     display: flex;
     flex-direction: row;
-
-    width: 290px;
+    padding: 5px;
+    max-width: 270px;
+    min-width: 220px;
     margin: 0 auto;
 }
 
