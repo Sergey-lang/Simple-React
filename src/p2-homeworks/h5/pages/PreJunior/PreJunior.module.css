@@ -1,6 +1,6 @@
-.prejunior_wrapper {
+.preJunior-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     height: auto;
@@ -8,6 +8,24 @@
 
 .home_block {
     padding: 15px;
-    margin: 15px;
     height: max-content;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.work {
+    display: flex;
+    width: auto;
+    min-width: 40%;
+    align-items: center;
+    padding: 5px;
+}
+
+.description {
+    width: 60%;
+    padding: 5px;
 }

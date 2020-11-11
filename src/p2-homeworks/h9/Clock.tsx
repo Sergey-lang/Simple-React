@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
 import s from './Clock.module.css'
 
 function Clock() {
-    const [timerId, setTimerId] = useState<number>(0);
+
+    const [timerId, setTimerId] = useState();
     const [date, setDate] = useState<Date>(new Date());
     const [show, setShow] = useState<boolean>(false);
     const [disabled, setDisabled] = useState<boolean>(false)
@@ -15,11 +16,17 @@ function Clock() {
 
     const start = () => {
         setDisabled(true)
-        const id: number = window.setInterval(() => {
+        const id = setInterval(() => {
             setDate(new Date())
         }, 1000);
         setTimerId(id);
     }
+
+    useEffect(() => {
+        return () => {
+            clearInterval(timerId)
+        }
+    }, [timerId])
 
     const onMouseEnter = () => {
         setShow(true)
@@ -30,26 +37,22 @@ function Clock() {
 
     const deg = 6
 
-    let hh = date.getHours() * 15
+    let hh = date.getHours() * 30
     let mm = date.getMinutes() * deg
     let ss = date.getSeconds() * deg
 
-    let dd = date.getDate()
-    console.log(hh,mm,ss)
-    let mh = date.getMonth()
-    let yy = date.getFullYear()
+    const get2digitsString = (num: number) => num < 10 ? '0' + num : num
 
-    const stringDate = `${dd < 10 ? '0' + dd : dd}:${mh < 10 ? '0' + mh : mh}:${yy < 10 ? '0' + yy : yy}`;
+    const stringDate = `${get2digitsString(date.getDate())}:
+    ${get2digitsString(date.getMonth() + 1)}:
+    ${get2digitsString(date.getFullYear())}`;
 
     return (
         <div className={s.main_block}>
-
             <div className={s.clock}
                  onMouseEnter={onMouseEnter}
-                 onMouseLeave={onMouseLeave}
-            >
+                 onMouseLeave={onMouseLeave}>
                 <div className={s.hour}>
-                    {}
                     <div className={s.hr} style={{transform: `rotate(${hh}deg)`}}></div>
                 </div>
                 <div className={s.min}>

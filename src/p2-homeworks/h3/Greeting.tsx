@@ -34,7 +34,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                 <span className={s.userCount}>Users count: {totalUsers}</span>
             </div>
             <div className={s.users_block}>
-                {users.map(u => <p key={u.id}>Name: {u.name}, ID: {u.id}</p>)}
+                {users.map(u => <p key={u.id}>ID: {u.id}</p>)}
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Error404.module.css';
 
-function Error404() {
+export function Error404() {
     return (
         <div className={s.error_wrapper}>
             <div className={s.numberError}>404</div>
@@ -9,5 +9,3 @@ function Error404() {
         </div>
     );
 }
-
-export default Error404;

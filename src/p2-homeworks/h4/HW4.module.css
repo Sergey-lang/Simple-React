@@ -1,9 +1,12 @@
-.blue {
-    border-bottom: 3px solid #de1919;
+.red {
+    border-bottom: 5px solid #de1919;
 }
 
-.column {
+.hw4Wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    width: auto;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.39);
+    margin: 0 auto;
 }

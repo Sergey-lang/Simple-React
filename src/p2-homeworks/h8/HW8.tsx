@@ -67,5 +67,3 @@ export const HW8: React.FC = () => {
         </div>
     );
 }
-
-export default HW8;

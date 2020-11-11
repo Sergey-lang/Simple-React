@@ -13,15 +13,15 @@ function HW6() {
     };
     const restore = () => {
         setValue(restoreState('editable-span-value', value)); //current value saved in key 'editable-span-value'
-    }; // I didn't understand how is it work, but it's working...:(
+    };
 
     return (
         <div className={s.wrapper}>
-            {/*should work (должно работать)*/}
-            <div>
+            <div className={s.editableSpanWrapper}>
                 <SuperEditableSpan
                     value={value}
                     onChangeText={setValue}
+                    className={s.editableSpan}
                     spanProps={{children: value ? undefined : 'enter text...'}}
                 />
             </div>
@@ -29,12 +29,6 @@ function HW6() {
                          className={s.btn}>save</SuperButton>
             <SuperButton onClick={restore}
                          className={s.btn}>restore</SuperButton>
-
-
-            {/*<hr/>*/}
-            {/*/!*для личного творчества, могу проверить*!/*/}
-            {/*/!*<AlternativeSuperEditableSpan/>*!/*/}
-            {/*<hr/>*/}
         </div>
     );
 }

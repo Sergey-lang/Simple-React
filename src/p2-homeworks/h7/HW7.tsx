@@ -5,7 +5,7 @@ import s from './HW7.module.css'
 
 const arr = ['x', 'y', 'z'];
 
-function HW7() {
+export function HW7() {
     const [value, onChangeOption] = useState(arr[0]);
 
     return (
@@ -27,4 +27,3 @@ function HW7() {
     );
 }
 
-export default HW7;

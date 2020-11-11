@@ -3,7 +3,7 @@ import SuperRange from './common/c7-SuperRange/SuperRange';
 import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange';
 import s from './HW11.module.css'
 
-function HW11() {
+export function HW11() {
     const [value1, setValue1] = useState<number>(0);
     const [value2, setValue2] = useState<number>(100);
 
@@ -36,5 +36,3 @@ function HW11() {
         </div>
     );
 }
-
-export default HW11;

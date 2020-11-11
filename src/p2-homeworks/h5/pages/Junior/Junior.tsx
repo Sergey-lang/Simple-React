@@ -1,13 +1,13 @@
 import React from 'react';
 import s from './Junior.module.css'
-import HW8 from '../../../h8/HW8';
-import HW7 from '../../../h7/HW7';
+import {HW8} from '../../../h8/HW8';
+import {HW7} from '../../../h7/HW7';
 import {Header} from '../../../NewComponents/Header';
 import {HW9} from '../../../h9/HW9';
 import {HW10} from '../../../h10/HW10';
-import HW11 from '../../../h11/HW11';
+import {HW11} from '../../../h11/HW11';
 
-function Junior() {
+export function Junior() {
     return (
         <div className={s.junior_wrapper}>
             <div className={s.home_block}>
@@ -33,5 +33,3 @@ function Junior() {
         </div>
     );
 }
-
-export default Junior;

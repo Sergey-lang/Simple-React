@@ -1,18 +1,19 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 250px;
     margin: 0 auto;
     margin-bottom: 20px;
 }
 
 .btn {
-    font-size: 18px;
-    height: 45px;
+    font-size: 16px;
+    height: 35px;
     margin-top: 3px;
     color: #353535;
     border: none;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, .39);
+    margin-bottom: 2px;
 }
 
 .btn:hover {
@@ -21,15 +22,20 @@
     background: #3f92d2;
 }
 
-.span {
-    font-size: 18px;
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
+.editableSpanWrapper {
     width: 100%;
-    height: 50px;
-    cursor: pointer;
+}
+
+.editableSpan {
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+
+    text-align: center;
+
+    background: #87b717;
 }
 
 .input:hover {

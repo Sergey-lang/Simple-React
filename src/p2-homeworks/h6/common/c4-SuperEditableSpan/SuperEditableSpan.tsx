@@ -1,6 +1,5 @@
-import React, {DetailedHTMLProps, InputHTMLAttributes, HTMLAttributes, useState} from 'react';
+import React, {DetailedHTMLProps, HTMLAttributes, InputHTMLAttributes, useState} from 'react';
 import SuperInputText from '../../../h4/common/c1-SuperInputText/SuperInputText';
-import s from './SuperEditableSpan.module.css'
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
@@ -47,7 +46,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
         onDoubleClick && onDoubleClick(e);
     };
 
-    const spanClassName = `${s.edit_span_block} ${className}`;
+    const spanClassName = `${className}`;
 
     return (
         <>
@@ -57,7 +56,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
                         autoFocus // пропсу с булевым значением не обязательно указывать true
                         onBlur={onBlurCallback}
                         onEnter={onEnterCallback}
-                        className={s.edit_input_block}
+                        // className={inputClassName}
                         {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
                     />
                 ) : (

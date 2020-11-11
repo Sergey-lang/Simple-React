@@ -22,35 +22,28 @@ function HW4() {
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked);
 
     return (
-        <div>
-            <div className={s.column}>
-                {/*should work (должно работать)*/}
-                <SuperInputText value={text}
-                                onChangeText={setText}
-                                onEnter={showAlert}
-                                error={error}
-                                className={s.blue} // проверьте, рабоет ли смешивание классов
-                />
+        <div className={s.hw4Wrapper}>
+            <SuperInputText value={text}
+                            onChangeText={setText}
+                            onEnter={showAlert}
+                            error={error}
+                            className={s.red} // проверьте, рабоет ли смешивание классов
+            />
 
-                {/*should work (должно работать)*/}
-                <SuperButton red // пропсу с булевым значением не обязательно указывать true
-                             onClick={showAlert}>
-                    delete {/*// название кнопки попадёт в children*/}
-                </SuperButton>
+            {/*should work (должно работать)*/}
+            <SuperButton red // пропсу с булевым значением не обязательно указывать true
+                         onClick={showAlert}>
+                delete {/*// название кнопки попадёт в children*/}
+            </SuperButton>
 
-                {/*should work (должно работать)*/}
-                <SuperCheckbox checked={checked}
-                               onChangeChecked={setChecked}>
-                    some text {/*// этот текст попадёт в children*/}
-                </SuperCheckbox>
-                {/*// onChange тоже должен работать*/}
-                <SuperCheckbox checked={checked}
-                               onChange={testOnChange}/>
-            </div>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperInputText/>*/}
-            {/*<AlternativeSuperButton/>*/}
-            {/*<AlternativeSuperCheckbox/>*/}
+            {/*should work (должно работать)*/}
+            <SuperCheckbox checked={checked}
+                           onChangeChecked={setChecked}>
+                some text {/*// этот текст попадёт в children*/}
+            </SuperCheckbox>
+            {/*// onChange тоже должен работать*/}
+            <SuperCheckbox checked={checked}
+                           onChange={testOnChange}/>
         </div>
     );
 }
