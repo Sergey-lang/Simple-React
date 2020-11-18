@@ -23,7 +23,7 @@ export const homeWorkReducer = (state: InitialStateType, action: ActionTypes): I
                         } else return 0
                     }
                 ).reverse()]
-            }
+            } else return state
 
         case 'CHECK': {
             return [...state.filter(p => p.age > 18)]

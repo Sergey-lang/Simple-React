@@ -24,7 +24,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
         onChange && onChange(e)
     }
 
-    const finalInputClassName = `${s.checkbox} ${className ? className : ''}`;
+    const finalInputClassName = `${s.defaultCheckbox} ${className}`;
 
     return (
         <label>

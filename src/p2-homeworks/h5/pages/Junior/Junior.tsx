@@ -7,8 +7,13 @@ import {HW9} from '../../../h9/HW9';
 import {HW10} from '../../../h10/HW10';
 import {HW11} from '../../../h11/HW11';
 import {HW12} from '../../../h12/HW12';
+import {useSelector} from 'react-redux';
+import {AppStoreType} from '../../../h10/bll/store';
+import {themeInitStateType} from '../../../h12/bll/themeReducer';
 
 export function Junior() {
+   const themes = useSelector<AppStoreType, themeInitStateType>(state => state.theme)
+   const blockStyle = `${s[themes.currentTheme]} ${s.wrapper}`
     return (
         <div className={s.junior_wrapper}>
             <div className={s.home_block}>
@@ -31,7 +36,7 @@ export function Junior() {
                 <Header title={'homework 11'}/>
                 <HW11/>
             </div>
-            <div className={s.home_block}>
+            <div className={`${s.home_block} ${blockStyle}`}>
                 <Header title={'homework 12'}/>
                 <HW12/>
             </div>

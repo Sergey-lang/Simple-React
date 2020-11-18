@@ -1,7 +1,20 @@
-.prejunplus_wrapper {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+.juniorPlus {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    height:700px;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
 }
+
+.home_block {
+    padding: 15px;
+    margin: 15px;
+    height : auto;
+    width: 50%;
+}
+
+.plusJun {
+    color: #666;
+}
+
