@@ -1,0 +1,12 @@
+.titleWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.titleWrapper h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+}

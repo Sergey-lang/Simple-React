@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    height: 100px;
+}
+
+.trigger {
+    width: auto;
+    position: absolute;
+    right: 80px;
+}

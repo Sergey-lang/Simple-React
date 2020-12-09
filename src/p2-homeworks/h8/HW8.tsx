@@ -1,8 +1,7 @@
-import React, {useState} from 'react';
-import {homeWorkReducer} from './bll/homeWorkReducer';
-import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
+import React, {useState} from 'react'
+import {homeWorkReducer} from './bll/homeWorkReducer'
+import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import s from './HW8.module.css'
-import {Header} from '../NewComponents/Header';
 
 export type PersonType = {
     _id: number

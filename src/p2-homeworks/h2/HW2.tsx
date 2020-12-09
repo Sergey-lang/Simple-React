@@ -13,11 +13,11 @@ export type FilterType = 'all' | 'low' | 'medium' | 'high'
 function HW2() {
     const [task, setTask] = useState<Array<ListType>>(
         [
-            {id: 1, task: 'Wash the dishes', importance: 'low'},
+            {id: 1, task: 'Do housework', importance: 'low'},
             {id: 2, task: 'Go shopping', importance: 'medium'},
-            {id: 3, task: 'Solve task from CodeWars', importance: 'low'},
-            {id: 4, task: 'Watch the movies about React', importance: 'medium'},
-            {id: 5, task: 'Be quite', importance: 'high'},
+            {id: 3, task: 'Buy milk', importance: 'low'},
+            {id: 4, task: 'Download new film', importance: 'medium'},
+            {id: 5, task: 'Be happy!', importance: 'high'},
         ]
     )
 

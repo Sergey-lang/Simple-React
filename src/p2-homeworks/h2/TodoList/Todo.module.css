@@ -3,6 +3,7 @@
     flex-direction: row;
 
     color: white;
+    margin-bottom: 3px;
     background: #fcfcfc;
 }
 
@@ -16,12 +17,12 @@
     height: 35px;
     cursor: pointer;
 
-    background: #3f92d2;
+    background: #222222;
 }
 
 .list_item:hover {
     color: #222;
-    background: #0a6de7;
+    background: #76c83f;
 }
 
 
@@ -33,7 +34,6 @@
     margin-left: 5%;
 
     transition: all 200ms;
-    text-transform: uppercase;
 }
 
 .remove_button {
@@ -50,7 +50,7 @@
 }
 
 .remove_button:hover {
-    background: rgba(177, 163, 163, .8);
+    background: rgb(236, 106, 106);
 }
 
 .filter {
@@ -76,5 +76,5 @@
 .filter_button:hover {
     transition: all 200ms;
 
-    background: rgba(115, 229, 53, .8);
+    background: rgba(145, 142, 142, 0.8);
 }

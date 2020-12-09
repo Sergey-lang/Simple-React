@@ -11,12 +11,11 @@
     position: relative;
 
     display: flex;
-
-    width: 290px;
+    min-width: max-content;
     height: 90px;
 
     border-radius: 5px 5px 5px 0;
-    background: #3f92d2;
+    background: #ddaf07;
 }
 
 .user_img {
@@ -33,7 +32,7 @@
     height: 60px;
     margin-right: 5px;
 
-    border: 2px solid #8a8a8a;
+    border: 2px solid #ddaf07;
     border-radius: 50%;
 }
 
@@ -53,7 +52,7 @@
 
     padding: 2px;
 
-    color: #f3efef;
+    color: #292828;
 }
 
 .message {
@@ -63,7 +62,7 @@
 
     padding: 5px 5px 5px 2px;
 
-    color: white;
+    color: #292828;
 }
 
 .time {
@@ -75,7 +74,7 @@
     width: 20%;
     margin: 5px;
 
-    color: #e5dada;
+    color: #393838;
 }
 
 .bubble_wrapper:after {
@@ -91,7 +90,7 @@
     content: '';
 
     border: 20px solid transparent;
-    border-right-color: #3f92d2;
+    border-right-color:#ddaf07;
     border-bottom: 0;
     border-left: 0;
 }

@@ -1,0 +1,13 @@
+.blogCard {
+    max-width: 500px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #e0dede;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    margin-top: 20px;
+}

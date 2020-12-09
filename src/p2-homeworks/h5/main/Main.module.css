@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.textWrapper h1 {
+    text-transform: uppercase;
+    font-size: 76px;
+}
+
+.textWrapper h4 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 4px;
+}
+
+.textWrapper h1 span {
+    color: #be1010;
+}
