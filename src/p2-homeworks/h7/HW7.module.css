@@ -1,7 +1,7 @@
 .hw_7 {
     display: flex;
-    width: 200px;
-    height: 150px;
+    align-items: center;
+    width:100%;
     flex-direction: column;
 }
 
@@ -15,6 +15,8 @@
     padding: 10px;
     box-shadow: 0 4px 4px -2px rgba(0,0,0,.58);
     margin-bottom: 5px;
+    max-width: 300px;
+    width: 100%;
 }
 
 .radio_button {

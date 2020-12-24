@@ -1,24 +1,17 @@
-import React from 'react';
-import s from './JuniorPlus.module.css';
-import {Header} from '../../../NewComponents/Header';
-import {HW13} from '../../../h13/HW13';
+import React from 'react'
+import {HW13} from '../../../h13/HW13'
+import {Title} from '../../../NewComponents/Title/Title'
+import {Card} from '../../../NewComponents/Card/Card'
 
 export function JuniorPlus() {
    return (
-      <div className={s.juniorPlus}>
-         <div className={s.home_block}>
-            <Header title={'homework 13'}
-                    className={s.plusJun}
-            />
-            <HW13/>
-         </div>
-         <div className={s.home_block}>
-            <Header title={'homework 14'}
-                    className={s.plusJun}
-            />
-            <HW13/>
-         </div>
-      </div>
-   );
+       <div>
+          <Title name={'Junior plus'}/>
+          <Card title={'Fetch Request'}
+                component={<HW13/>}
+                description={'Native fetch or axios?'}
+          />
+       </div>
+   )
 }
 

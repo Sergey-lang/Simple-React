@@ -49,9 +49,7 @@ export const HW13: React.FC = (props) => {
                <h1 className={s.title}><span className={s.text}>I'M </span>AWAIT FETCH</h1>
             </div>
             <div>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Beatae dignissimos dolore est facilis fuga ipsum nam possimus
-                  qui quibusdam rerum!</p>
+               <p>The Fetch API allows you to asynchronously request for a resource. Use the fetch() method to return a promise that resolves into a Response object.</p>
             </div>
             <div className={s.request}>
                <div>

@@ -1,145 +1,133 @@
 .clock {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 300px;
-    height: 300px;
-
-    cursor: pointer;
-
-    border: 4px solid #091921;
-    border-radius: 50%;
-    background: url('clock.png');
-    background-size: cover;
-    box-shadow: 0 -15px 15px rgba(255, 255, 255, .05),
-    inset 0 -15px 15px rgba(255, 255, 255, .05),
-    0 15px 15px rgba(0, 0, 0, .05),
-    inset 0 15px 15px rgba(0, 0, 0, .05);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   max-width: 230px;
+   height: auto;
+   cursor: pointer;
+   border: 4px solid #36bc12;
+   border-radius: 50%;
+   background: url('clock.png');
+   background-size: cover;
 }
 
 .clock:before {
-    position: absolute;
-    z-index: 10000;
-
-    width: 15px;
-    height: 15px;
-
-    content: '';
-
-    border-radius: 50%;
-    background: black;
+   position: absolute;
+   z-index: 10000;
+   width: 15px;
+   height: 15px;
+   content: '';
+   border-radius: 50%;
+   background: black;
 }
 
 .clock .hour,
 .hr {
-    width: 0;
-    height: 140px;
+   width: 0;
+   height: 140px;
 }
 
 .clock .min,
 .mn {
-    width: 0;
-    height: 170px;
+   width: 0;
+   height: 170px;
 }
 
 .clock .sec,
 .sc {
-    width: 0;
-    height: 210px;
+   width: 0;
+   height: 210px;
 }
 
 .hr,
 .mn,
 .sc {
-    position: absolute;
+   position: absolute;
+   display: flex;
+   justify-content: center;
 
-    display: flex;
-    justify-content: center;
-
-    border-radius: 50%;
+   border-radius: 50%;
 }
 
 .hr:before {
-    position: absolute;
-    z-index: 10;
+   position: absolute;
+   z-index: 10;
 
-    width: 8px;
-    height: 80px;
+   width: 8px;
+   height: 80px;
 
-    content: '';
+   content: '';
 
-    border-radius: 6px 6px 0 0;
-    background: #ca0707;
+   border-radius: 6px 6px 0 0;
+   background: #ca0707;
 }
 
 .mn:before {
-    position: absolute;
-    z-index: 11;
+   position: absolute;
+   z-index: 11;
 
-    width: 4px;
-    height: 90px;
+   width: 4px;
+   height: 90px;
 
-    content: '';
+   content: '';
 
-    border-radius: 6px 6px 0 0;
-    background: #be1010;
+   border-radius: 6px 6px 0 0;
+   background: #be1010;
 }
 
 .sc:before {
-    position: absolute;
-    z-index: 12;
+   position: absolute;
+   z-index: 12;
 
-    width: 2px;
-    height: 150px;
+   width: 2px;
+   height: 150px;
 
-    content: '';
+   content: '';
 
-    border-radius: 6px 6px 0 0;
-    background: black;
-}
-
-.button_wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    width: 100%;
+   border-radius: 6px 6px 0 0;
+   background: black;
 }
 
 .data_wrapper {
-    font-size: 18px;
-    font-size: 35px;
+   font-size: 35px;
+   color: white;
+   display: flex;
+   justify-content: center;
 
-    display: flex;
-    justify-content: center;
+   margin: 10px;
+}
 
-    margin: 10px;
+.button_wrapper {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   margin-top: 20px;
 }
 
 .watches_button {
-    font-size: 16px;
-    font-weight: 600;
+   font-size: 16px;
+   font-weight: 600;
+   margin: 0 10px;
+   width: 80px;
+   height: 80px;
 
-    width: 80px;
-    height: 80px;
+   cursor: pointer;
+   transition: all 200ms;
 
-    cursor: pointer;
-    transition: all 200ms;
-
-    border: 3px solid #adadae;
-    border-radius: 50%;
+   border: 3px solid #adadae;
+   border-radius: 50%;
 }
 
 .watches_button:hover {
-    transition: all 200ms;
+   transition: all 200ms;
 
-    border: 3px solid #091921;
-    -webkit-box-shadow: 0 0 0 13px rgba(104, 104, 104, .17);
-    box-shadow: 0 0 0 13px rgba(104, 104, 104, .17);
+   border: 3px solid #091921;
+   -webkit-box-shadow: 0 0 0 13px rgba(104, 104, 104, .17);
+   box-shadow: 0 0 0 13px rgba(104, 104, 104, .17);
 }
 
 .watches_button:disabled:hover {
-    box-shadow: none;
-    border: 3px solid #adadae;
+   box-shadow: none;
+   border: 3px solid #adadae;
 }

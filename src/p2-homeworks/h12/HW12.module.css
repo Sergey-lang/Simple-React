@@ -1,51 +1,52 @@
 .dark {
-    background: dimgrey;
+   background: dimgrey;
 }
 
 .dark-text {
-    color: aliceblue;
+   color: aliceblue;
 }
 
 .red {
-    background: lightcoral;
+   background: lightcoral;
 }
 
 .red-text {
-    color: aqua;
+   color: aqua;
 }
 
 .some {
-    background: lightgreen;
+   background: lightgreen;
 }
 
 .some-text {
-    color: darkslateblue;
+   color: darkslateblue;
 }
 
 .purple {
-    background: #7908AA;
+   background: #7908AA;
 }
 
 .purple-text {
-    color: #F3FD00;
+   color: #F3FD00;
 }
 
 .wrapper {
-    position: relative;
+   position: relative;
 }
 
 .themeSelector {
-    width: 200px;
-    position: absolute;
-    top: -100px;
-    height: 30px;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    color: #434343;
+   width: 200px;
+   position: absolute;
+   right: 0;
+   height: 20px;
+   font-size: 14px;
+   font-weight: 600;
+   border: none;
+   color: #434343;
 }
 
 .text {
-    letter-spacing: 0.02em;
-    line-height: 26px;
+   letter-spacing: 0.02em;
+   padding: 5px;
+   font-size: 16px;
 }

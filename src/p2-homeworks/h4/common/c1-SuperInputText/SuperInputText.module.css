@@ -9,6 +9,14 @@
 }
 
 .error {
-    color: #c83a3a;
+    padding-top: 5px;
+    color: #e9dbdb;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.red {
+    border-bottom: 5px solid #ff0000;
 }
 

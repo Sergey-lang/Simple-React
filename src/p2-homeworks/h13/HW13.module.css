@@ -4,7 +4,7 @@
 }
 
 .greeting {
-   color: #666;
+   color: #fafafa;
    font-size: 22px;
    font-weight: 400;
 }
@@ -20,11 +20,11 @@
    margin: 10px 0 23px;
    font-size: 16px;
    line-height: 32px;
-   color: #666;
+   color: #fafafa;
 }
 
 .text {
-   color: #666;
+   color: #fafafa;
 }
 
 .title {
@@ -50,7 +50,6 @@
 
 .btn {
    border-radius: 26px;
-   font-weight: 500;
    width: 208px;
    height: 46px;
    line-height: 46px;
@@ -72,7 +71,7 @@
 .result {
    display: flex;
    flex-direction: column;
-   color: #666;
+   color: #fafafa;
    padding: 20px 0;
 }
 

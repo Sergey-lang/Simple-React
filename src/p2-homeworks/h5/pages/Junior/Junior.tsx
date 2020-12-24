@@ -1,45 +1,43 @@
-import React from 'react';
-import s from './Junior.module.css'
-import {HW8} from '../../../h8/HW8';
-import {HW7} from '../../../h7/HW7';
-import {Header} from '../../../NewComponents/Header';
-import {HW9} from '../../../h9/HW9';
-import {HW10} from '../../../h10/HW10';
-import {HW11} from '../../../h11/HW11';
-import {HW12} from '../../../h12/HW12';
-import {useSelector} from 'react-redux';
-import {AppStoreType} from '../../../h10/bll/store';
-import {themeInitStateType} from '../../../h12/bll/themeReducer';
+import React from 'react'
+import {HW8} from '../../../h8/HW8'
+import {HW7} from '../../../h7/HW7'
+import {HW9} from '../../../h9/HW9'
+import {HW10} from '../../../h10/HW10'
+import {HW11} from '../../../h11/HW11'
+import {HW12} from '../../../h12/HW12'
+import {Title} from '../../../NewComponents/Title/Title'
+import {Card} from '../../../NewComponents/Card/Card'
 
 export function Junior() {
-   const themes = useSelector<AppStoreType, themeInitStateType>(state => state.theme)
-   const blockStyle = `${s[themes.currentTheme]} ${s.wrapper}`
-    return (
-        <div className={s.junior_wrapper}>
-            <div className={s.home_block}>
-                <Header title={'homework 8'}/>
-                <HW8/>
-            </div>
-            <div className={s.home_block}>
-                <Header title={'homework 9'}/>
-                <HW9/>
-            </div>
-            <div className={s.home_block}>
-                <Header title={'homework 7'}/>
-                <HW7/>
-            </div>
-            <div className={s.home_block}>
-                <Header title={'homework 10'}/>
-                <HW10/>
-            </div>
-            <div className={s.home_block}>
-                <Header title={'homework 11'}/>
-                <HW11/>
-            </div>
-            <div className={`${s.home_block} ${blockStyle}`}>
-                <Header title={'homework 12'}/>
-                <HW12/>
-            </div>
-        </div>
-    );
+
+   return (
+
+       <div>
+          <Title name={'Junior page'}/>
+          <Card title={'Options dependency.'}
+                component={<HW7/>}
+                description={'One state - one dependency.'}
+          />
+          <Card title={'Filter A-z or score'}
+                component={<HW8/>}
+                description={'Use data array in useState.'}
+          />
+          <Card title={'Simple clock'}
+                component={<HW9/>}
+                description={'The useEffect hook is the Swiss Army knife of all the hooks. Unmounting components after care!'}
+          />
+          <Card title={'Loader'}
+                component={<HW10/>}
+                description={'App initialization. User have to understand what happening.'}
+          />
+          <Card title={'Material UI'}
+                component={<HW11/>}
+                description={'Used Material UI  components with own props.'}
+          />
+          <Card title={'Use Selector'}
+                component={<HW12/>}
+                description={'Get data from redux with UseSelector.'}
+          />
+       </div>
+   )
 }

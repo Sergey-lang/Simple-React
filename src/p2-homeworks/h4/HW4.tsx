@@ -1,51 +1,58 @@
-import React, {ChangeEvent, useState} from 'react';
-import SuperInputText from './common/c1-SuperInputText/SuperInputText';
-import s from './HW4.module.css';
-import SuperButton from './common/c2-SuperButton/SuperButton';
-import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox';
+import React, {ChangeEvent, useState} from 'react'
+import SuperInputText from './common/c1-SuperInputText/SuperInputText'
+import s from './HW4.module.css'
+import SuperButton from './common/c2-SuperButton/SuperButton'
+import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 
 function HW4() {
 
-    const [text, setText] = useState<string>('');
-    const error = text ? '' : 'error';
+   const [text, setText] = useState<string>('')
+   const error = text ? '' : 'error'
 
-    const showAlert = () => {
-        if (error) {
-            alert('введите текст...');
-        } else {
-            alert(text); // если нет ошибки показать текст
-            setText('')
-        }
-    }
+   const showAlert = () => {
+      if (error) {
+         alert('введите текст...')
+      } else {
+         alert(text)
+         setText('')
+      }
+   }
 
-    const [checked, setChecked] = useState<boolean>(false);
-    const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked);
+   const [checked, setChecked] = useState<boolean>(false)
+   const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
 
-    return (
-        <div className={s.hw4Wrapper}>
-            <SuperInputText value={text}
-                            onChangeText={setText}
-                            onEnter={showAlert}
-                            error={error}
-                            className={s.red} // проверьте, рабоет ли смешивание классов
-            />
+   return (
+       <div className={s.hw4Wrapper}>
+          <SuperInputText
+              value={text}
+              onChangeText={setText}
+              onEnter={showAlert}
+              error={error}
+              className={s.red}
+          />
+          <div className={s.btnWrapper}>
+             <SuperButton
+                 className={s.work4Btn}
+                 onClick={showAlert}>
+                delete
+             </SuperButton>
+          </div>
 
-            {/*should work (должно работать)*/}
-            <SuperButton red // пропсу с булевым значением не обязательно указывать true
-                         onClick={showAlert}>
-                delete {/*// название кнопки попадёт в children*/}
-            </SuperButton>
 
-            {/*should work (должно работать)*/}
-            <SuperCheckbox checked={checked}
-                           onChangeChecked={setChecked}>
-                some text {/*// этот текст попадёт в children*/}
-            </SuperCheckbox>
-            {/*// onChange тоже должен работать*/}
-            <SuperCheckbox checked={checked}
-                           onChange={testOnChange}/>
-        </div>
-    );
+          <SuperCheckbox
+              checked={checked}
+              onChangeChecked={setChecked}
+              className={s.work4Checkbox}
+          spanClassName={s.work4Span}
+          >
+             some text
+          </SuperCheckbox>
+
+          <SuperCheckbox
+              checked={checked}
+              onChange={testOnChange}/>
+       </div>
+   )
 }
 
-export default HW4;
+export default HW4

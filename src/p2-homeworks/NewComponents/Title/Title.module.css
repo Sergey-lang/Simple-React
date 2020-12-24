@@ -10,3 +10,9 @@
     text-transform: uppercase;
     font-size: 36px;
 }
+
+@media screen and (max-width: 537px) {
+    .titleWrapper h2  {
+        text-align: center;
+    }
+}

@@ -1,11 +1,9 @@
 import React from 'react'
-import s from './PreJunior.module.css'
 import HW1 from '../../../h1/HW1'
 import HW2 from '../../../h2/HW2'
 import HW3 from '../../../h3/HW3'
 import HW4 from '../../../h4/HW4'
 import HW6 from '../../../h6/HW6'
-import {Header} from '../../../NewComponents/Header'
 import {Title} from '../../../NewComponents/Title/Title'
 import {Card} from '../../../NewComponents/Card/Card'
 
@@ -24,6 +22,14 @@ export function PreJunior() {
           <Card title={'Errors'}
                 component={<HW3/>}
                 description={'Enter your data and check input field.'}
+          />
+          <Card title={'State Dependency'}
+                component={<HW4/>}
+                description={'Show error if you have invalid data. Two component have one state dependencies.'}
+          />
+          <Card title={'Local storage'}
+                component={<HW6/>}
+                description={'You can save your text in storage and return it! Click restore and old value return in input.'}
           />
        </div>
    )
