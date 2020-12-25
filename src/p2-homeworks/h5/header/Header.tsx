@@ -14,7 +14,7 @@ export function Header() {
           <div className={s.trigger}>
              <HamburgerButton changeState={setState} state={state}/>
           </div>
-          <BurgerNav state={state}/>
+          <BurgerNav state={state} callback={setState}/>
        </div>
    )
 }

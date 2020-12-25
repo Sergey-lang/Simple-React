@@ -6,7 +6,7 @@
    max-width: 230px;
    height: auto;
    cursor: pointer;
-   border: 4px solid #36bc12;
+   border: 4px solid #b0bcaf;
    border-radius: 50%;
    background: url('clock.png');
    background-size: cover;
@@ -60,7 +60,7 @@
    content: '';
 
    border-radius: 6px 6px 0 0;
-   background: #ca0707;
+   background: #4f4fe5;
 }
 
 .mn:before {
@@ -73,7 +73,7 @@
    content: '';
 
    border-radius: 6px 6px 0 0;
-   background: #be1010;
+   background: #418fec;
 }
 
 .sc:before {

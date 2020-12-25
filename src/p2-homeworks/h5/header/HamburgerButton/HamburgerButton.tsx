@@ -1,16 +1,16 @@
-import React, {useState} from 'react'
+import React from 'react'
 import classNames from 'classnames'
 
 import './HamburgerButton.css'
 
 type HamburgerProps = {
    state: boolean
-   changeState: (state:boolean) => void
+   changeState: (state: boolean) => void
 }
 
-export const HamburgerButton: React.FC<HamburgerProps> = ({state,changeState}) => {
+export const HamburgerButton: React.FC<HamburgerProps> = ({state, changeState}) => {
 
-   const handler = () => {
+   const onClickHandler = () => {
       changeState(!state)
    }
 
@@ -18,7 +18,7 @@ export const HamburgerButton: React.FC<HamburgerProps> = ({state,changeState}) =
        <div className={classNames('navIcon', {
           'open': !state
        })} onClick={(e) => {
-          handler()
+          onClickHandler()
        }}>
           <span></span>
           <span></span>

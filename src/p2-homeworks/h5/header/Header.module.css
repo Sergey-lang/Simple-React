@@ -1,11 +1,6 @@
-.navbar {
-    display: flex;
-    width: 100%;
-    padding: 20px 0;
-}
-
 .trigger {
     width: auto;
     position: absolute;
+    top: 20px;
     right: 80px;
 }

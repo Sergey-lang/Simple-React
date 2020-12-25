@@ -80,13 +80,24 @@
    flex-direction: column;
 }
 
-.list span::before{
-   content: '';
-   display: inline-block;
-   border-radius: 50%;
-   width: 5px;
-   height: 5px;
-   background-color: #72b626;
-   padding: 5px 5px;
-   margin: 0 10px 0 0;
+.list span {
+   border: 1px solid #8a8888;
+   border-radius: 5px;
+   margin-top: 2px;
+   padding: 5px;
+}
+
+@media screen and (max-width:525px ){
+   .hw13Wrapper {
+      text-align: center;
+   }
+   .title {
+      font-size: 35px;
+      line-height: 35px;
+   }
+   .description p {
+      padding: 0;
+      font-size: 16px;
+      line-height: 20px;
+   }
 }
