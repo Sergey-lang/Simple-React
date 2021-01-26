@@ -3,6 +3,8 @@ import {HW13} from '../../../h13/HW13'
 import {Title} from '../../../NewComponents/Title/Title'
 import {Card} from '../../../NewComponents/Card/Card'
 
+import s from './JuniorPlus.module.css'
+
 export function JuniorPlus() {
    return (
        <div>
