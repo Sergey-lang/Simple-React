@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Simple-React-HW/static/css/main.ea758594.chunk.css",
-    "main.js": "/Simple-React-HW/static/js/main.c9bd59eb.chunk.js",
-    "main.js.map": "/Simple-React-HW/static/js/main.c9bd59eb.chunk.js.map",
+    "main.css": "/Simple-React-HW/static/css/main.d5ceda8e.chunk.css",
+    "main.js": "/Simple-React-HW/static/js/main.c1cee80f.chunk.js",
+    "main.js.map": "/Simple-React-HW/static/js/main.c1cee80f.chunk.js.map",
     "runtime-main.js": "/Simple-React-HW/static/js/runtime-main.53ea6b7a.js",
     "runtime-main.js.map": "/Simple-React-HW/static/js/runtime-main.53ea6b7a.js.map",
     "static/js/2.1183dff3.chunk.js": "/Simple-React-HW/static/js/2.1183dff3.chunk.js",
     "static/js/2.1183dff3.chunk.js.map": "/Simple-React-HW/static/js/2.1183dff3.chunk.js.map",
     "index.html": "/Simple-React-HW/index.html",
-    "precache-manifest.84c3ebdb191de04e64f8c11a8095a881.js": "/Simple-React-HW/precache-manifest.84c3ebdb191de04e64f8c11a8095a881.js",
+    "precache-manifest.5fdbf3154ff019c1c38293f0d98010c1.js": "/Simple-React-HW/precache-manifest.5fdbf3154ff019c1c38293f0d98010c1.js",
     "service-worker.js": "/Simple-React-HW/service-worker.js",
-    "static/css/main.ea758594.chunk.css.map": "/Simple-React-HW/static/css/main.ea758594.chunk.css.map",
+    "static/css/main.d5ceda8e.chunk.css.map": "/Simple-React-HW/static/css/main.d5ceda8e.chunk.css.map",
     "static/js/2.1183dff3.chunk.js.LICENSE.txt": "/Simple-React-HW/static/js/2.1183dff3.chunk.js.LICENSE.txt",
     "static/media/Preloader.gif": "/Simple-React-HW/static/media/Preloader.90a879f6.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.53ea6b7a.js",
     "static/js/2.1183dff3.chunk.js",
-    "static/css/main.ea758594.chunk.css",
-    "static/js/main.c9bd59eb.chunk.js"
+    "static/css/main.d5ceda8e.chunk.css",
+    "static/js/main.c1cee80f.chunk.js"
   ]
 }
